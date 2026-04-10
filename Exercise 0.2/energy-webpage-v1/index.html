@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Data Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/PowerIcon.png" alt="Power Logo" id="logo-home" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-item" data-page="televisions">Televisions</a></li>
+                <li><a href="#" class="nav-item" data-page="about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="page-content">
+            <h1>Australian Energy Overview</h1>
+            <p>Welcome to the dashboard. Household energy efficiency in Australia is a growing priority as we transition to renewable sources.</p>
+        </section>
+
+        <section id="televisions" class="page-content" style="display:none;">
+            <h1>Television Consumption</h1>
+            <p>Did you know? Televisions are one of the most common appliances in Australian homes, with efficiency ratings significantly impacting yearly bills.</p>
+        </section>
+
+        <section id="about" class="page-content" style="display:none;">
+            <h1>About Us</h1>
+            <p>This project was created for COS30045 Exercise 0.2 to explore web development and data visualization basics.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kamil Sirhan | COS30045 Assignment</p>
+        <p><small>GenAI Acknowledgement: Structure and logic assisted by Gemini 3 Flash.</small></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

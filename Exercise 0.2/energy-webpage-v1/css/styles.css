@@ -1,0 +1,99 @@
+/* 1. Define Color Variables based on the PowerIcon */
+:root {
+    --power-orange: #e6a241;   /* The bolt color */
+    --power-cream: #f7e8b6;    /* The circle background */
+    --power-brown: #8b7d5a;    /* The outline/text color */
+    --white: #ffffff;
+    --bg-light: #fafaf8;
+}
+
+/* 2. General Page Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--power-brown);
+    background-color: var(--bg-light);
+}
+
+/* 3. Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: 10px 40px;
+    border-bottom: 4px solid var(--power-orange); /* Matching logo color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer; /* Provides feedback that it is clickable */
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Subtle feedback on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 4. Navigation Links & Feedback */
+.nav-item {
+    text-decoration: none;
+    color: var(--power-brown);
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Mouse over feedback (Requirement) */
+.nav-item:hover {
+    background-color: var(--power-cream);
+    color: var(--power-orange);
+}
+
+/* Feedback on current page (Requirement) */
+.nav-item.active {
+    background-color: var(--power-orange);
+    color: var(--white);
+}
+
+/* 5. Main Content Area */
+main {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+.page-content h1 {
+    color: var(--power-orange);
+    border-left: 5px solid var(--power-cream);
+    padding-left: 15px;
+}
+
+/* 6. Footer Styling */
+footer {
+    background-color: var(--power-brown);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer small {
+    opacity: 0.8;
+}
